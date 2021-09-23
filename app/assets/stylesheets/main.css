@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+}
+
+.side-bar {
+  background-color: #FFEFD5	;
+  width: 300px;
+  height: 100vh;
+}
+
+.main {
+  background-color: #FFFAFA;
+  width: calc(100vw - 300px);
+}
+
+.title {
+  background-image: url("books-768426_1280");
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title{
+  font-size: 50px;
+  color: white;
+}
