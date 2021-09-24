@@ -13,11 +13,11 @@
   flex-direction: column;
 }
 
-.books-passage{
+.books-passage {
   display: flex;
 }
 
-.books-passage-icon{
+.books-passage-icon {
   text-align:center;
   text-decoration: none;
   background-color: teal;
@@ -26,6 +26,11 @@
   color: white;
   font-size: 30px;
   padding: 50px 15px;
+}
+
+.header-right {
+  width: calc(100vw - 300px);
+  display: flex;
 }
 
 .search-form {
@@ -62,7 +67,7 @@
   padding: 1vh 0;
 }
 
-.genre-list{
+.genre-list {
   text-decoration: none;
   color: black;
 }

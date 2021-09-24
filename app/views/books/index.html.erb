@@ -8,3 +8,9 @@
     <%= render "main_books" %>
   </div>
 </div>
+
+    <%#投稿ボタン%>
+<%= link_to '#', class: 'pen-btn' do %>
+  <span class='pen-btn-text'>感想を書く</span>
+  <%= image_tag 'pen.png' , size: '80x80' ,class: "pen-btn-icon" %>
+<% end %>
