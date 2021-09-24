@@ -7,6 +7,6 @@ class User < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :genre
   
-  validates :user,       precedence: true
-  validates :genre_id,   precedence: true
+  validates :user,            presence: true
+  validates :genre_id,        presence: true
 end
