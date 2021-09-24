@@ -1,9 +1,16 @@
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+.form-side {
+  background-color: teal;
+}
+
 .form-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #FFEFD5;
-  height: 100vh;
+  height: 120vh;
+  margin: 0 20vw;
 }
 
 .form-header {
@@ -15,13 +22,35 @@
   text-align: center;
 }
 
-.form-header-text{
-}
+
 
 .form-group {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding-top: 20px;
+}
+
+.indispensable {
+  background-color: teal;
+  color: white;
+  padding: 2px;
+}
+
+
+.actions {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: white;
+}
+
+.sign-up-btn {
+  width: 100%;
+  background: white;
+  border: 2px solid wheat;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
 }
