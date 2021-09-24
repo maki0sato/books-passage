@@ -9,7 +9,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
 
       t.string  :nickname,           null: false
       t.string  :favalid_author
-      t.integer :genre_id
+      t.integer :genre_id,           null: false
       t.text    :text
 
       ## Recoverable

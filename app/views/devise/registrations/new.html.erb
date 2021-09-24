@@ -1,24 +1,67 @@
-<h2>Sign up</h2>
+<div class='form-page'>
+<div class='title'>
+  <div class='app-title'>
+  𝔹𝕆𝕆𝕂𝕊 ℙ𝔸𝕊𝕊𝔸𝔾𝔼
+  </div>
+</div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">ニックネーム</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_field :nickname, class:"input-default", id:"nickname", placeholder:"ニックネームを決めましょう", maxlength:"25" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">メールアドレス</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.email_field :email, class:"input-default", id:"email", placeholder:"メールアドレスを入力", autofocus: true %>
+  </div>
+    
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">パスワード</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.password_field :password, class:"input-default", id:"password", placeholder:"パスワードを入力" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">パスワード(確認)</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.password_field :password_confirmation, class:"input-default", id:"password-confirmation", placeholder:"同じパスワードを入力" %>
+  </div>
+ 
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">好きな作家</label>
+      <span class="indispensable">任意</span>
+    </div>
+    <%= f.text_field :favalid_author, class:"input-default", id:"favalid_author", placeholder:"好きな作家は？", maxlength:"40" %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">好きな小説のジャンル</label>
+      <span class="indispensable">任意</span>
+    </div>
+    <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"genre"}) %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">自己紹介</label>
+      <span class="indispensable">任意</span>
+    </div>
+    <%= f.text_area :text, class:"input-default", id:"text", placeholder:"好きな作家の事、思い出の作品、自由に書きましょう" %>
   </div>
 
   <div class="actions">
@@ -26,4 +69,4 @@
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+</div>
