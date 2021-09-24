@@ -65,6 +65,7 @@
   align-items: center;
   width: 100%;
   padding: 1vh 0;
+  text-decoration: none;
 }
 
 .genre-list {
