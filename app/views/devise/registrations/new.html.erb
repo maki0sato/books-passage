@@ -1,9 +1,14 @@
 <div class='form-page'>
-<div class='title'>
-  <div class='app-title'>
-  𝔹𝕆𝕆𝕂𝕊 ℙ𝔸𝕊𝕊𝔸𝔾𝔼
-  </div>
+
+<div class='books-passage'>
+  <%= link_to '𝔹𝕆𝕆𝕂𝕊 ℙ𝔸𝕊𝕊𝔸𝔾𝔼', "#", class: 'books-passage-icon'%>
 </div>
+
+<div class='form-header'>
+    <h1 class='form-header-text'>
+      会員情報入力
+    </h1>
+  </div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
