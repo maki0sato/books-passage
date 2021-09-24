@@ -2,7 +2,7 @@
 
   <%#画像クリックでトップページへ遷移できるように%>
   <div class='books-passage'>
-  <%= link_to '𝔹𝕆𝕆𝕂𝕊 ℙ𝔸𝕊𝕊𝔸𝔾𝔼', "#", class: 'books-passage-icon'%>
+  <%= link_to '𝔹𝕆𝕆𝕂𝕊 ℙ𝔸𝕊𝕊𝔸𝔾𝔼',root_path , class: 'books-passage-icon'%>
   </div>
 
   <div class='header-right'>
@@ -15,7 +15,7 @@
         <li><%= link_to 'ログアウト', '#',  class: "logout" %></li>
       <% else %>
         <li><%= link_to 'ログイン', '#', class: "login" %></li>
-        <li><%= link_to '新規登録', '#', class: "sign-up" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
       <% end %>
       </ul>
     </div>
