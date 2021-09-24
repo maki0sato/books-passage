@@ -1,0 +1,32 @@
+<header class='top-page-header'>
+
+  <%#画像クリックでトップページへ遷移できるように%>
+  <div class='books-passage'>
+  <%= link_to '𝔹𝕆𝕆𝕂𝕊ℙ𝔸𝕊𝕊𝔸𝔾𝔼', "#", class: 'books-passage-icon'%>
+  </div>
+
+  <div class='nav'>
+    <%#ログインの有無で表示の変更%>
+    <ul class='list'>
+    <%#ユーザー詳細ページへ遷移%>
+      <li><%= link_to 'ユーザー名', "#", class: "user-nickname" %></li>
+      <li><%= link_to 'ログアウト', '#',  class: "logout" %></li>
+      <li><%= link_to 'ログイン', '#', class: "login" %></li>
+      <li><%= link_to '新規登録', '#', class: "sign-up" %></li>
+    </ul>
+  </div>
+
+  <div class='search-bar-contents'>
+    <%#検索機能%>
+    <form class="search-form" action="#">
+      <input class='input-box' placeholder='キーワードから探す'>
+      <button class="search-button">
+        <%= image_tag "search.png", class:"search-icon" %>
+      </button>
+    </form>
+    <%#ジャンルを選択するとその一覧が表示されるように%>
+    <%= link_to '〜本のジャンルで探す〜', "#", class: "genre-list" %>
+  </div>
+    
+  
+</header>

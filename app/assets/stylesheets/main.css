@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+}
+
+.side-bar {
+  background-color: #FFEFD5	;
+  width: 300px;
+  height: 100vh;
+}
+
+.main {
+  background-color: #FFFAFA;
+  width: calc(100vw - 300px);
+}
+
+.title {
+  background-image: url("books-768426_1280");
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 50px;
+  color: white;
+  background-color: teal;
+}
+
+.books-lists {
+  display: flex;
+}
+
+.what-lists{
+  background-color: teal;
+  color: white;
+}
+
+.left-books {
+  list-style: none;
+  width: calc(60vw - 300px);
+  border: 1px solid white;
+  text-align:center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.right-books {
+  list-style: none;
+  width: calc(60vw - 300px);
+  border: 1px solid white;
+  text-align:center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.book-content {
+  background-color: #FFEFD5;
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid wheat;
+}
+
+.book-image {
+  width: auto;
+  height: 33vh;
+}
