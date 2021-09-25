@@ -22,7 +22,6 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 }
 
 
-
 .form-group {
   width: 60%;
   display: flex;
@@ -35,6 +34,12 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   background-color: teal;
   color: white;
   padding: 2px;
+  margin-left: 5px;
+}
+
+
+.click-upload {
+  width: calc(100% + 60px);
 }
 
 
@@ -52,4 +57,8 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   line-height: 48px;
   font-size: 14px;
   cursor: pointer;
+}
+
+.ninni {
+  margin-left: 5px;
 }

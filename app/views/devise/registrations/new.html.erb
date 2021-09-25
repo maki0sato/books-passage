@@ -50,7 +50,7 @@
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">好きな作家</label>
-      <span>任意</span>
+      <span class="ninni">任意</span>
     </div>
     <%= f.text_field :favalid_author, class:"input-default", id:"favalid_author", placeholder:"好きな作家は？", maxlength:"40" %>
   </div>
@@ -58,7 +58,7 @@
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">好きな小説のジャンル</label>
-      <span>任意</span>
+      <span class="ninni">任意</span>
     </div>
     <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"genre"}) %>
   </div>
@@ -66,7 +66,7 @@
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">自己紹介</label>
-      <span>任意</span>
+      <span class="ninni">任意</span>
     </div>
     <%= f.text_area :text, class:"input-default", id:"text", placeholder:"好きな作家の事、思い出の作品、自由に書きましょう" %>
   </div>
