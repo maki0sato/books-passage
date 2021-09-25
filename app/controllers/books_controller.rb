@@ -8,7 +8,7 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
-    if @item.save
+    if @book.save
       redirect_to root_path
     else
       render :new
