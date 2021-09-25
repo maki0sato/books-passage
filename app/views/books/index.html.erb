@@ -9,6 +9,8 @@
   </div>
 </div>
 
+<%= render "shared/footer" %>
+
     <%#投稿ボタン%>
 <% if user_signed_in? %>
 <%= link_to new_book_path, class: 'pen-btn' do %>
