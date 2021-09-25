@@ -11,7 +11,7 @@
 
     <%#投稿ボタン%>
 <% if user_signed_in? %>
-<%= link_to '#', class: 'pen-btn' do %>
+<%= link_to new_book_path, class: 'pen-btn' do %>
   <span class='pen-btn-text'>感想を書く</span>
   <%= image_tag 'pen.png' , size: '80x80' ,class: "pen-btn-icon" %>
 <% end %>
