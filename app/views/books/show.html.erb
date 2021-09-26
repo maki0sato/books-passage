@@ -1,0 +1,66 @@
+<%= render "shared/header" %>
+
+<div class="wrapper">
+  <div class="side-bar">
+    <%= render "side_bar" %>
+  </div>
+  
+  <div class='show-content'>
+    <div class='book-box'>
+      <h2 class='show-book-title'><%= @book.title %></h2>
+      <h2 class="show-book-author"><%= "作者:" + @book.author %></h2>
+      <div class='show-book-genre'>  
+        <h2 class="show-book-genre"><%= "ジャンル:" + @book.genre[:name] %></h2>
+      </div>
+      <h2 class="show-book-user"><%= "投稿者:" + @book.user.nickname %></h2>
+
+      <%= image_tag(@book.image, class: "show-book-image") %>
+
+      <div class=content-table>
+        <div class='table'>
+          <h2 class="table-name">書き出し</h2>
+          <h2 class="table-value"><%= @book.begining %><h2>
+        </div>
+
+        <div class='table'>
+          <h2 class="table-name">あらすじ・概要</h2>
+          <h2 class="table-value"><%=@book.synopsis %><h2>
+        </div>
+      </div>
+
+      <div class='open-btn'>
+        <input type="button" value="感想を読む(ネタバレあり)" onclick="clickBtn1()" class='open-btn'/>
+      </div>
+
+      <div id='hide'>
+        <div class=content-table>
+          <div class='table'>
+            <h2 class="table-name">心に残った一文</h2>
+            <h2 class="table-value"><%= @book.begining %><h2>
+          </div>
+
+          <div class='table'>
+            <h2 class="table-name">感想</h2>
+            <h2 class="table-value"><%=@book.thoughts %><h2>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<%= render "shared/footer" %>
+
+<% if user_signed_in? && current_user.id == @book.user_id %>
+  <%= link_to "#", class: 'e-btn' do %>
+    <span class='e-btn-text'>編集する</span>
+  <% end %>
+
+  <%= link_to "#", class: 'd-btn' do %>
+    <span class='d-btn-text'>削除する</span>
+  <% end %>
+<% end %>

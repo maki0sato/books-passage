@@ -17,10 +17,14 @@ class BooksController < ApplicationController
     end
   end
 
+  def show
+    @book = Book.find(params[:id])
+  end
+
   private
 
   def book_params
-    params.require(:book).permit(:title, :author, :genre_id, :impression, :sentence, :synopsis, :begining, :image).merge(user_id: current_user.id)
+    params.require(:book).permit(:title, :author, :genre_id, :thoughts, :sentence, :synopsis, :begining, :image).merge(user_id: current_user.id)
   end
 
 end

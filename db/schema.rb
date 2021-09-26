@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2021_09_25_022004) do
     t.string "title", null: false
     t.string "author", null: false
     t.integer "genre_id", null: false
-    t.text "impression", null: false
+    t.text "thoughts", null: false
     t.string "sentence", null: false
     t.text "synopsis", null: false
     t.string "begining", null: false
@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 2021_09_25_022004) do
     t.string "encrypted_password", default: "", null: false
     t.string "nickname", null: false
     t.string "favalid_author"
-    t.integer "genre_id"
+    t.integer "genre_id", null: false
     t.text "text"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
