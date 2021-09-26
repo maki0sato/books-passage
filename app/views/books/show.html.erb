@@ -15,11 +15,21 @@
 
       <%= image_tag(@book.image, class: "show-book-image") %>
 
-      <table class='table'>
-        <tbody>
+      <div class=content-table>
+        <div class='table'>
+          <div class='show-begining'>
+              <h2 class="table-name">書き出し</h2>
+              <h2 class="table-value"><%= @book.begining %><h2>
+          </div>
+         </div>
 
-        </tbody>
-      </table>
+          <div class='table'>
+          <div class='show-synopsis'>
+              <h2 class="table-name">あらすじ・概要</h2>
+              <h2 class="table-value"><%= @book.synopsis %><h2>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
