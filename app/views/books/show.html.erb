@@ -34,3 +34,13 @@
 
 
 <%= render "shared/footer" %>
+
+<% if user_signed_in? && current_user.id == @book.user_id %>
+  <%= link_to "#", class: 'e-btn' do %>
+    <span class='e-btn-text'>編集する</span>
+  <% end %>
+
+  <%= link_to "#", class: 'd-btn' do %>
+    <span class='d-btn-text'>削除する</span>
+  <% end %>
+<% end %>

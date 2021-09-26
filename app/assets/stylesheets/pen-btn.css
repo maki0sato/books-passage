@@ -23,3 +23,43 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 .pen-btn-icon {
   width: 80%;
 }
+
+.d-btn {
+  width: 100px;
+  background: rgb(158, 18, 18);
+  text-align: center;
+  border-radius: 4%;
+  border: 1px solid white;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.d-btn-text {
+  color: white;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.e-btn {
+  width: 100px;
+  background: teal;
+  text-align: center;
+  border-radius: 4%;
+  border: 1px solid white;
+  bottom: 100px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.e-btn-text {
+  color: white;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
