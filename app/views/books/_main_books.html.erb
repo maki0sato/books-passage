@@ -15,19 +15,19 @@
           <%= image_tag(book.image, class: "book-image") %>
       <% end %>
           <div class='book-title'>
-            タイトル:<%= link_to "#{book.title}", "#" %>
+            タイトル:<%= link_to "#{book.title}", "#", class: "book-title" %>
           </div>
           <div class='book-author'>
-            作者:<%= link_to "#{book.author}", "#" %>
+            作者:<%= link_to "#{book.author}", "#", class: "book-author" %>
           </div>
           <div class='book-genre'>
-            ジャンル:<%= link_to "#{book.genre[:name]}", "#" %>
+            ジャンル:<%= link_to "#{book.genre[:name]}", "#", class: "book-genre" %>
           </div>
           <div class='book-begining'>
             <%= "書き出し:" + book.begining %>
           </div>
           <div class='book-user'>
-            投稿者:<%= link_to "#{book.user.nickname}", "#" %>
+            投稿者:<%= link_to "#{book.user.nickname}", "#", class: "book-user" %>
         </div>
       </div>
     <% end %>
