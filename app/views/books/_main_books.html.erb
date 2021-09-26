@@ -10,7 +10,7 @@
     <h2 class='what-lists'>みんなが新しく読んだ本</h2>
     <% @books.each do |book| %>
       <div class='book-list'>
-      <%= link_to "#" do %>
+      <%= link_to book_path(book.id) do %>
         <div class='book-content'>
           <%= image_tag(book.image, class: "book-image") %>
       <% end %>
