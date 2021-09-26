@@ -6,7 +6,7 @@ class Genre < ActiveHash::Base
     { id: 4,  name: '恋愛小説' },
     { id: 5,  name: 'SF小説' },
     { id: 6,  name: 'ファンタジー小説(幻想小説)' },
-    { id: 7,  name: 'ホラー小説(怪奇小説・怪談小説)' },
+    { id: 7,  name: '怪奇小説・怪談小説' },
     { id: 8,  name: 'ライトノベル' },
     { id: 9,  name: '経済小説' },
     { id: 10, name: '政治小説' },
