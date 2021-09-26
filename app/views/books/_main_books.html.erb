@@ -20,8 +20,11 @@
           <div class='book-author'>
             作者:<%= link_to "#{book.author}", "#" %>
           </div>
+          <div class='book-genre'>
+            ジャンル:<%= link_to "#{book.genre[:name]}", "#" %>
+          </div>
           <div class='book-begining'>
-            書き出し:<%= link_to "#{book.begining}", "#" %>
+            <%= "書き出し:" + book.begining %>
           </div>
           <div class='book-user'>
             投稿者:<%= link_to "#{book.user.nickname}", "#" %>
