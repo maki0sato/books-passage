@@ -27,6 +27,25 @@
           <h2 class="table-value"><%=@book.synopsis %><h2>
         </div>
       </div>
+
+      <div class='open-btn'>
+        <button id='open'><%= @book.user.nickname + "さんの感想を見る" %></button>
+      </div>
+
+      <div id='hide'>
+        <div class=content-table>
+          <div class='table'>
+            <h2 class="table-name">心に残った一文</h2>
+            <h2 class="table-value"><%= @book.begining %><h2>
+          </div>
+
+          <div class='table'>
+            <h2 class="table-name">感想</h2>
+            <h2 class="table-value"><%=@book.thoughts %><h2>
+          </div>
+        </div>
+        
+      </div>
     </div>
   </div>
 
