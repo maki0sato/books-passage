@@ -31,7 +31,6 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   margin: 10px;
   border: 2px solid wheat ;
   background-color: white;
-
   width: 700px;
 }
 
@@ -43,4 +42,14 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 .table-value {
   text-align: left;
   padding: 5px;
+}
+
+.open-btn {
+  width: 700px;
+  height: 70px;
+  background-color: teal;
+  color: white;
+  border: 2px solid #2F4F4F;
+  cursor: pointer;
+  cursor: hand;
 }
