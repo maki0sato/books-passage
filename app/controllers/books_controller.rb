@@ -1,6 +1,7 @@
 class BooksController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
   def index
+    @books = Book.includes(:user).order('created_at DESC')
   end
 
   def new

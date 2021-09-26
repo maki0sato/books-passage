@@ -8,20 +8,29 @@
   <%#全ての本のリスト%>
   <li class='left-books'>
     <h2 class='what-lists'>みんなが新しく読んだ本</h2>
-    <div class='book-content'>
-      <%= image_tag "yumejuya.jpeg", class: "book-image"%>
-      <div class='book-title'>
-        <span>タイトル:</span>夢十夜
+    <% @books.each do |book| %>
+      <div class='book-list'>
+      <%= link_to "#" do %>
+        <div class='book-content'>
+          <%= image_tag(book.image, class: "book-image") %>
+      <% end %>
+          <div class='book-title'>
+            タイトル:<%= link_to "#{book.title}", "#", class: "book-title" %>
+          </div>
+          <div class='book-author'>
+            作者:<%= link_to "#{book.author}", "#", class: "book-author" %>
+          </div>
+          <div class='book-genre'>
+            ジャンル:<%= link_to "#{book.genre[:name]}", "#", class: "book-genre" %>
+          </div>
+          <div class='book-begining'>
+            <%= "書き出し:" + book.begining %>
+          </div>
+          <div class='book-user'>
+            投稿者:<%= link_to "#{book.user.nickname}", "#", class: "book-user" %>
+        </div>
       </div>
-      <div class='book-author'>
-        <span>作者:</span>夏目漱石
-      </div>
-      <div class='book-bedining'>
-        <span>書き出し:</span>こんな夢を見た。
-      </div>
-      <div class='book-user'>
-        <span>投稿者:</span>user
-    </div>
+    <% end %>
   </li>
   <%#フォローした人の本%>
   <li class='right-books'>
