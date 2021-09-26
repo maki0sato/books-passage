@@ -5,6 +5,18 @@
     <%= render "side_bar" %>
   </div>
   
+  <div class='show-content'>
+    <div class='book-box'>
+      <h2 class='show-book-title'><%= @book.title %></h2>
+      <%= image_tag(@book.image, class: "show-book-image") %>
+      <tbody>
+
+      </tbody>
+    </div>
+  </div>
+
 </div>
+
+
 
 <%= render "shared/footer" %>
