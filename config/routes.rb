@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'books/index'
   root to: "books#index"
   resources :books
+  resources :users, only: [:show, :edit, :update]
 end

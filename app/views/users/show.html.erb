@@ -1,0 +1,75 @@
+<%= render "shared/header" %>
+
+<div class="wrapper">
+  <div class="side-bar">
+    <%= render "shared/side_bar" %>
+  </div>
+  <div class="user-show-content">
+  <div class="user_show">
+    <div class='show-user-name'>
+      <%= @user.nickname %>さんのマイページ
+      <% if user_signed_in? %>
+        <% if current_user.id == @user.id %>
+          <%= link_to edit_user_path(@user.id), class: "user-edit-btn" do %>
+            <h2 div='user-edit-btn'>編集する</h2>
+          <% end %>
+        <% else %>
+          <h2 class='user-edit-btn' >フォローする</h2>
+        <% end %>
+      <% end %>
+    </div>
+    <div class='profile'>
+      <div class='table-user'>
+          <h2 class="table-name">好きなジャンル</h2>
+          <h2 class="table-value-user"><%= @user.genre[:name] %><h2>
+      </div>
+
+      <div class='table-user'>
+          <h2 class="table-name">好きな作家</h2>
+          <h2 class="table-value-user"><%= @user.favalid_author %><h2>
+      </div>
+
+      <div class='table-user'>
+          <h2 class="table-name">自己紹介</h2>
+          <h2 class="table-value"><%= @user.text %><h2>
+      </div>
+    </div>
+
+    <h1 class=user-read><%= @user.nickname %>さんが読んだ本</h2>
+
+    <div class="user-books">
+    <% @user.books.each do |book| %>
+      <div class='book-list'>
+      <%= link_to book_path(book.id) do %>
+        <div class='book-content'>
+          <%= image_tag(book.image, class: "book-image") %>
+      <% end %>
+          <div class='book-title'>
+            タイトル:<%= link_to "#{book.title}", "#", class: "book-title" %>
+          </div>
+          <div class='book-author'>
+            作者:<%= link_to "#{book.author}", "#", class: "book-author" %>
+          </div>
+          <div class='book-genre'>
+            ジャンル:<%= link_to "#{book.genre[:name]}", "#", class: "book-genre" %>
+          </div>
+          <div class='book-begining'>
+            <%= "書き出し:" + book.begining %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    </div>
+  </div>
+  </div>
+</div>
+
+<%= render "shared/footer" %>
+
+    <%#投稿ボタン%>
+<% if user_signed_in? %>
+<%= link_to new_book_path, class: 'pen-btn' do %>
+  <span class='pen-btn-text'>感想を書く</span>
+  <%= image_tag 'pen.png' , size: '80x80' ,class: "pen-btn-icon" %>
+<% end %>
+<% end %>
