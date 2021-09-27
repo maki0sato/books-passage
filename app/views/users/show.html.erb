@@ -10,7 +10,9 @@
       <%= @user.nickname %>さんのマイページ
       <% if user_signed_in? %>
         <% if current_user.id == @user.id %>
-          <h2>編集する</h2>
+          <%= link_to edit_user_path(@user.id) do %>
+            <div class='user-edit-btn'>編集する</div>
+          <% end %>
         <% else %>
           <h2>フォローする</h2>
         <% end %>
