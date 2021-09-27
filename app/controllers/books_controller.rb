@@ -35,6 +35,11 @@ class BooksController < ApplicationController
     end
   end
 
+  def destroy
+    book = Book.find(params[:id])
+    redirect_to root_path if book.user_id == current_user.id && book.destroy
+  end
+
   private
 
   def book_params
