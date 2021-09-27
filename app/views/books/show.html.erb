@@ -54,13 +54,13 @@
               <%= form.submit "コメントする" , class: "comment-btn" %>
             <% end %>
           <% else %>
-            <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+            <strong><p class="are-you-log-in">コメントを投稿するには、新規登録/ログインが必要です</p></strong>
            <% end %>
            <div class="comments">
-              <h4>＜コメント一覧＞</h4>
+              <h4 class="coment-table">＜コメント一覧＞</h4>
               <% @comments.each do |comment| %>
-                <p>
-                  <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+                <p class="comment-box">
+                  <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}", class: "comment-content" %>：</strong>
                   <%= comment.comment %>
                 </p>
              <% end %>

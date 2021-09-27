@@ -4,6 +4,8 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   margin-top: 10px;
   border: 3px solid teal;
   padding: 5px;
+  position: relative;
+  text-align: left;
 }
 
 .comment-btn {
@@ -13,4 +15,35 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   border: 2px solid #2F4F4F;
   cursor: pointer;
   cursor: hand;
+  position: absolute;
+  top: 27px;
+  left: 220px;
+}
+
+.comments{
+  background-color: white;
+  border: 1px solid wheat;
+}
+
+.are-you-log-in {
+  text-align: center;
+}
+
+.coment-table {
+  border: 3px solid teal;
+  background-color: teal;
+  text-align: center;
+  color: white;
+}
+
+.comment-content {
+  text-decoration: none;
+  background-color: teal;
+  color: white;
+  padding: 1px;
+}
+
+.comment-box {
+  margin: 7px 5px 5px 5px;
+  border-bottom: 1px dotted teal;
 }
