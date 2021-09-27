@@ -12,7 +12,7 @@
       <div class='show-book-genre'>  
         <h2 class="show-book-genre"><%= "ジャンル:" + @book.genre[:name] %></h2>
       </div>
-      <h2 class="show-book-user"><%= "投稿者:" + @book.user.nickname %></h2>
+      <h2 class="show-book-user">投稿者:<%= link_to "#{@book.user.nickname}", user_path(@book.user_id) %></h2>
 
       <%= image_tag(@book.image, class: "show-book-image") %>
 
