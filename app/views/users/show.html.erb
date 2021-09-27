@@ -4,10 +4,47 @@
   <div class="side-bar">
     <%= render "shared/side_bar" %>
   </div>
-  <div class="">
+  <div class="user_show">
+    <h2 class='show-user-name'><%= @user.nickname %>さんのマイページ</h2>
+    <div class='profile'>
+      <div class='table'>
+          <h2 class="table-name">好きなジャンル</h2>
+          <h2 class="table-value"><%= @user.genre[:name] %><h2>
+      </div>
 
-     show
+      <div class='table'>
+          <h2 class="table-name">好きな作家</h2>
+          <h2 class="table-value"><%= @user.favalid_author %><h2>
+      </div>
 
+      <div class='table'>
+          <h2 class="table-name">自己紹介</h2>
+          <h2 class="table-value"><%= @user.text %><h2>
+      </div>
+    </div>
+    <div class="user-books">
+    <% @user.books.each do |book| %>
+      <div class='book-list'>
+      <%= link_to book_path(book.id) do %>
+        <div class='book-content'>
+          <%= image_tag(book.image, class: "book-image") %>
+      <% end %>
+          <div class='book-title'>
+            タイトル:<%= link_to "#{book.title}", "#", class: "book-title" %>
+          </div>
+          <div class='book-author'>
+            作者:<%= link_to "#{book.author}", "#", class: "book-author" %>
+          </div>
+          <div class='book-genre'>
+            ジャンル:<%= link_to "#{book.genre[:name]}", "#", class: "book-genre" %>
+          </div>
+          <div class='book-begining'>
+            <%= "書き出し:" + book.begining %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    </div>
   </div>
 </div>
 
