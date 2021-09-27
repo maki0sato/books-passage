@@ -4,20 +4,24 @@
   <div class="side-bar">
     <%= render "shared/side_bar" %>
   </div>
+  <div class="user-show-content">
   <div class="user_show">
-    <h2 class='show-user-name'><%= @user.nickname %>さんのマイページ</h2>
+    <div class='show-user-name'>
+      <%= @user.nickname %>さんのマイページ
+      <h2>フォローする</h2>
+    </div>
     <div class='profile'>
-      <div class='table'>
+      <div class='table-user'>
           <h2 class="table-name">好きなジャンル</h2>
-          <h2 class="table-value"><%= @user.genre[:name] %><h2>
+          <h2 class="table-value-user"><%= @user.genre[:name] %><h2>
       </div>
 
-      <div class='table'>
+      <div class='table-user'>
           <h2 class="table-name">好きな作家</h2>
-          <h2 class="table-value"><%= @user.favalid_author %><h2>
+          <h2 class="table-value-user"><%= @user.favalid_author %><h2>
       </div>
 
-      <div class='table'>
+      <div class='table-user'>
           <h2 class="table-name">自己紹介</h2>
           <h2 class="table-value"><%= @user.text %><h2>
       </div>
@@ -45,6 +49,7 @@
       </div>
     <% end %>
     </div>
+  </div>
   </div>
 </div>
 
