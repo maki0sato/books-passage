@@ -1,8 +1,9 @@
 class Book < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to :user
-  belongs_to :genre
-  has_one_attached :image
+  belongs_to        :user
+  belongs_to        :genre
+  has_one_attached  :image
+  has_many          :comments
 
 
   validates :title,          presence: true
