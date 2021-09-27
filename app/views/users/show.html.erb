@@ -8,7 +8,13 @@
   <div class="user_show">
     <div class='show-user-name'>
       <%= @user.nickname %>さんのマイページ
-      <h2>フォローする</h2>
+      <% if user_signed_in? %>
+        <% if current_user.id == @user.id %>
+          <h2>編集する</h2>
+        <% else %>
+          <h2>フォローする</h2>
+        <% end %>
+      <% end %>
     </div>
     <div class='profile'>
       <div class='table-user'>
@@ -26,6 +32,9 @@
           <h2 class="table-value"><%= @user.text %><h2>
       </div>
     </div>
+
+    <h1 class=user-read><%= @user.nickname %>さんが読んだ本</h2>
+
     <div class="user-books">
     <% @user.books.each do |book| %>
       <div class='book-list'>
