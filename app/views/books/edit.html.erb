@@ -1,0 +1,97 @@
+<div class='form-side' >
+
+  <div class='form-page'>
+
+    <div class='books-passage'>
+      <%= link_to '𝔹𝕆𝕆𝕂𝕊 ℙ𝔸𝕊𝕊𝔸𝔾𝔼', root_path, class: 'books-passage-icon'%>
+    </div>
+
+    <div class='form-header'>
+      <h1 class='form-header-text'>
+         投稿の内容を変更できます
+      </h1>
+    </div>
+
+    <%= form_with model: @book, local: true do |f| %>
+
+      <%= render 'shared/error_book', model: f.object %>
+
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">タイトル</label>
+          <span class="indispensable">必須</span>
+        </div>
+       <%= f.text_field :title, class:"input-default", id:"title", placeholder:"本のタイトル" %>
+      </div>
+
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">作者</label>
+          <span class="indispensable">必須</span>
+        </div>
+       <%= f.text_field :author, class:"input-default", id:"author", placeholder:"作者名" %>
+      </div>
+
+      <div class="form-group">
+        <div class="form-text">
+          本の表紙
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="click-upload">
+          <p>
+          クリックしてファイルをアップロード
+          </p>
+          <%= f.file_field :image, id:"new-book-image" %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">小説のジャンル</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"genre"}) %>
+      </div>
+
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">小説の書き出し</label>
+          <span class="indispensable">必須</span>
+        </div>
+       <%= f.text_field :begining, class:"input-default", id:"begining", placeholder:"書き出しの一文を書こう" %>
+      </div>
+
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">本の紹介・あらすじ・概要</label>
+          <span class="indispensable">必須</span>
+        </div>
+       <%= f.text_area :synopsis, class:"input-default", id:"synopsis", placeholder:"ネタバレ厳禁・本の紹介、あらすじや概要を描いてみよう" %>
+      </div>
+
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">心に残った一文</label>
+          <span class="indispensable">必須</span>
+        </div>
+       <%= f.text_field :sentence, class:"input-default", id:"sentence", placeholder:"最大255文字です" %>
+      </div>
+
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">本の感想</label>
+          <span class="indispensable">必須</span>
+        </div>
+       <%= f.text_area :thoughts, class:"input-default", id:"inpression", placeholder:"ネタバレあり・自由に本の感想を描こう" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "変更する", class: "sign-up-btn" %>
+      </div>
+
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<%= render "shared/footer" %>
