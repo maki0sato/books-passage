@@ -5,12 +5,12 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 }
 
 .user_show {
-  background-color: white;
+  background-color: #FFEFD5;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 10px solid teal;
+  border: 50px double teal;
 }
 
 
@@ -19,6 +19,9 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   width: 350px;
   border: 5px solid wheat;
   background-color: #FFEFD5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile {
@@ -27,16 +30,21 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 
 .table-user {
   margin: 10px;
-  border: 2px solid teal;
+  border: 2px solid wheat;
   background-color: white;
   width: 700px;
 }
 
-
-
 .user-read {
   margin-top: 20px;
   width: 350px;
+  background-color: wheat;
+}
+
+.user-edit-btn {
   background-color: teal;
+  width: 100px;
   color: white;
+  border: 2px solid #2F4F4F;
+  text-decoration: none;
 }

@@ -23,6 +23,10 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   height: 50vh;
 }
 
+.show-book-user {
+  text-decoration: none;
+}
+
 .content-table {
   text-align: center;
 }
@@ -52,4 +56,9 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   border: 2px solid #2F4F4F;
   cursor: pointer;
   cursor: hand;
+}
+
+.user-edit-btn {
+  background-color: teal;
+  width: 100px;
 }
