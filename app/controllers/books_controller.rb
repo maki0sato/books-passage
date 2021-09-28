@@ -2,6 +2,9 @@ class BooksController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
   def index
     @books = Book.includes(:user).order('created_at DESC')
+    if user_signed_in?
+      @fbooks = Book.where(user_id: current_user.following_ids).order('created_at DESC')
+    end
   end
 
   def new
