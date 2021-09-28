@@ -85,4 +85,9 @@
   <%= link_to book_path(@book.id), method: :delete, class: 'd-btn' do %>
     <span class='d-btn-text'>削除する</span>
   <% end %>
+  <% else %>
+  <%= link_to new_book_path, class: 'pen-btn' do %>
+    <span class='pen-btn-text'>感想を書く</span>
+    <%= image_tag 'pen.png' , size: '80x80' ,class: "pen-btn-icon" %>
+  <% end %>
 <% end %>
