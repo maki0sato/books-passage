@@ -18,14 +18,12 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   display: flex;
   width:  290px;
   height: 150px;
-
 }
 
 .books-passage-icon {
   text-align:center;
   text-decoration: none;
   background-color: teal;
-  
   color: white;
   font-size: 30px;
   padding: 50px 15px;
