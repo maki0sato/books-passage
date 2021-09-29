@@ -18,7 +18,7 @@
             タイトル:<%= link_to "#{book.title}", "#", class: "book-title" %>
           </div>
           <div class='book-author'>
-            作者:<%= link_to "#{book.author}", "#", class: "book-author" %>
+            作者:<%= link_to "#{book.author}", "books/search?keyword=#{book.author}&commit=検索", class: "book-author" %>
           </div>
           <div class='book-genre'>
             ジャンル:<%= link_to "#{book.genre[:name]}", "#", class: "book-genre" %>
@@ -47,7 +47,7 @@
             タイトル:<%= link_to "#{fbook.title}", "#", class: "book-title" %>
           </div>
           <div class='book-author'>
-            作者:<%= link_to "#{fbook.author}", "#", class: "book-author" %>
+            作者:<%= link_to "#{fbook.author}", "books/search?keyword=#{fbook.author}&commit=検索", class: "book-author" %>
           </div>
           <div class='book-genre'>
             ジャンル:<%= link_to "#{fbook.genre[:name]}", "#", class: "book-genre" %>
