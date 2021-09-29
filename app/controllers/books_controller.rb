@@ -49,6 +49,8 @@ class BooksController < ApplicationController
 
   def search
     @books = Book.search(params[:keyword])
+    @books_author = Book.select(:author).distinct
+    @books_title = Book.select(:title).distinct
   end
 
   private

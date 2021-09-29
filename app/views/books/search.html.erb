@@ -5,12 +5,12 @@
     <%= render "shared/side_bar" %>
   </div>
   <div class="s-main">
-      <li class='left-books'>
-    <h2 class='what-lists'>みんなが新しく読んだ本</h2>
+      <li class='s-books'>
+    <h2 class='what-lists'>検索結果</h2>
     <% @books.each do |book| %>
       <div class='book-list'>
       <%= link_to book_path(book.id) do %>
-        <div class='book-content'>
+        <div class='s-book-content'>
           <%= image_tag(book.image, class: "book-image") %>
       <% end %>
           <div class='book-title'>
@@ -32,6 +32,28 @@
       </div>
     <% end %>
   </li>
+  </div>
+
+  <div class=center-list>
+    <div class=author-list>
+      <h2 class='what-lists'>作者一覧</h2>
+      <% @books_author.each do |author| %>
+        <div class='s-book-author'>
+          <%= link_to "#{author.author}", "/books/search?keyword=#{author.author}&commit=検索", class: "s-book-author" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  
+  <div class=right-list>
+    <div class=title-list>
+      <h2 class='what-lists'>タイトル一覧</h2>
+      <% @books_title.each do |title| %>
+        <div class='s-book-title'>
+          <%= link_to "#{title.title}", "/books/search?keyword=#{title.title}&commit=検索", class: "s_book-title" %>
+        </div>
+      <% end %>
+    </div>
   </div>
     
 </div>

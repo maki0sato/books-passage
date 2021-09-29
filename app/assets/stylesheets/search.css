@@ -1,0 +1,64 @@
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+.s-main {
+  background-color: wheat;
+  border: 2px solid white;
+  width: calc(60vw - 300px);
+}
+
+.s-books {
+  list-style: none;
+  text-align:center;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid white;
+}
+
+.s-book-content {
+  background-color: #FFEFD5;
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+.author-list {
+  list-style: none;
+  text-align:center;
+  padding: 10px;
+  margin: 10px;
+  background-color: wheat;
+  border: 2px solid white;
+}
+
+.title-list {
+  list-style: none;
+  text-align:center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #FFEFD5;
+  border: 2px solid white;
+}
+
+.center-list {
+  width: 290px;
+  background-color: #FFEFD5;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.right-list {
+  width: 290px;
+  background-color: wheat;
+  border: 2px solid white;
+}
+
+.s-book-author {
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.s-book-title {
+  text-decoration: none;
+  margin-top: 5px;
+}
