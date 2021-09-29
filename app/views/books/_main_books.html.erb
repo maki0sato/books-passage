@@ -15,7 +15,7 @@
           <%= image_tag(book.image, class: "book-image") %>
       <% end %>
           <div class='book-title'>
-            タイトル:<%= link_to "#{book.title}", "#", class: "book-title" %>
+            タイトル:<%= link_to "#{book.title}", "/books/search?keyword=#{book.title}&commit=検索", class: "book-title" %>
           </div>
           <div class='book-author'>
             作者:<%= link_to "#{book.author}", "books/search?keyword=#{book.author}&commit=検索", class: "book-author" %>
@@ -44,7 +44,7 @@
           <%= image_tag(fbook.image, class: "book-image") %>
       <% end %>
           <div class='book-title'>
-            タイトル:<%= link_to "#{fbook.title}", "#", class: "book-title" %>
+            タイトル:<%= link_to "#{fbook.title}", "/books/search?keyword=#{fbook.title}&commit=検索", class: "book-title" %>
           </div>
           <div class='book-author'>
             作者:<%= link_to "#{fbook.author}", "books/search?keyword=#{fbook.author}&commit=検索", class: "book-author" %>
