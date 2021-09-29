@@ -61,7 +61,7 @@
               <% @comments.each do |comment| %>
                 <p class="comment-box">
                   <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}", class: "comment-content" %>：</strong>
-                  <%= comment.comment %>
+                  <span class='comment'><%= comment.comment %></span>
                 </p>
              <% end %>
             </div>
@@ -84,5 +84,10 @@
 
   <%= link_to book_path(@book.id), method: :delete, class: 'd-btn' do %>
     <span class='d-btn-text'>削除する</span>
+  <% end %>
+  <% else %>
+  <%= link_to new_book_path, class: 'pen-btn' do %>
+    <span class='pen-btn-text'>感想を書く</span>
+    <%= image_tag 'pen.png' , size: '80x80' ,class: "pen-btn-icon" %>
   <% end %>
 <% end %>
