@@ -15,4 +15,12 @@ class Book < ApplicationRecord
   validates :begining,       presence: true
   validates :user_id,        presence: true
   validates :image,          presence: true
+
+  def self.search(search)
+    if search != ""
+      Book.where('title LIKE(?)', "%#{search}%").or(Book.where('author LIKE(?)', "%#{search}%"))
+    else
+      Book.all
+    end
+  end
 end

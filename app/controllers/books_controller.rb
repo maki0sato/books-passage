@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
+
   def index
     @books = Book.includes(:user).order('created_at DESC')
     if user_signed_in?
@@ -43,6 +44,12 @@ class BooksController < ApplicationController
   def destroy
     book = Book.find(params[:id])
     redirect_to root_path if book.user_id == current_user.id && book.destroy
+  end
+
+  def search
+    @books = Book.search(params[:keyword])
+    @books_author = Book.select(:author).distinct
+    @books_title = Book.select(:title).distinct
   end
 
   private

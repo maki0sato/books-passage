@@ -58,10 +58,10 @@
           <%= image_tag(book.image, class: "book-image") %>
       <% end %>
           <div class='book-title'>
-            タイトル:<%= link_to "#{book.title}", "#", class: "book-title" %>
+            <%= "タイトル:" + book.title %>
           </div>
           <div class='book-author'>
-            作者:<%= link_to "#{book.author}", "#", class: "book-author" %>
+            <%= "作者名:" + book.author %>
           </div>
           <div class='book-genre'>
             ジャンル:<%= link_to "#{book.genre[:name]}", "#", class: "book-genre" %>
