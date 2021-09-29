@@ -47,21 +47,25 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   width: 65vw;
   height: 5vh;
   display: flex;
-  margin-bottom: 5px;
+  position: fixed;
+  top: 10px;
 }
 
 .search-form>.input-box {
   width: 100%;
   height: 5vh;
   padding-left: 10px;
+  border-radius: 10px;
 }
 
 .search-button {
-  width: 5vh;
+  width:5vh;
+  height: 5vh;
   border: 0;
   cursor: pointer;
   background-color: wheat;
   padding: 8px;
+  border-radius: 5px;
 }
 
 .search-icon {
@@ -73,33 +77,56 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 1vh 0;
   text-decoration: none;
+  width: 200px;
 }
 
 .genre-list {
+  height: 30px;
+  margin-top: 50px;
+  padding-top: 5px;
   text-decoration: none;
   color: black;
+  border: 3px solid wheat;
+  border-radius: 5px;
 }
 
 .user-nickname {
   text-decoration: none;
-  color: black;
   font-weight: bold;
+  color: black;
+  border-bottom: 2px solid #2F4F4F;
+  cursor: pointer;
+  cursor: hand;
 }
 
 .logout {
   text-decoration: none;
-  color: black;
+  background-color: teal;
+  color: white;
+  border: 2px solid #2F4F4F;
+  cursor: pointer;
+  cursor: hand;
+  border-radius: 5px;
 }
 
 .login {
   text-decoration: none;
-  color: black;
+  background-color: teal;
+  color: white;
+  border: 2px solid #2F4F4F;
+  cursor: pointer;
+  cursor: hand;
+  border-radius: 5px;
 }
 
 .sign-up {
   text-decoration: none;
-  color: #333333;
+  background-color: teal;
+  color: white;
+  border: 2px solid #2F4F4F;
+  cursor: pointer;
+  cursor: hand;
+  border-radius: 5px;
 }
