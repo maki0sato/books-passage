@@ -47,6 +47,8 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 }
 
 .comment-box {
+  width: 700px;
   margin: 7px 5px 5px 5px;
   border-bottom: 1px dotted teal;
+  word-wrap: break-word;
 }

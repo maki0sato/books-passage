@@ -61,7 +61,7 @@
               <% @comments.each do |comment| %>
                 <p class="comment-box">
                   <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}", class: "comment-content" %>：</strong>
-                  <%= comment.comment %>
+                  <span class='comment'><%= comment.comment %></span>
                 </p>
              <% end %>
             </div>
