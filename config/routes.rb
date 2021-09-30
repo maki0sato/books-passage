@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: "books#index"
   resources :books do
     resources :comments, only: :create
+    resources :likes, only: [:create, :destroy]
     collection do
       get 'search'
     end
