@@ -32,16 +32,20 @@
 
     </div>
     <div class='likes'>
-      <h3>いいねしている投稿</h3>
+       <div class='iine-list'>
+        <h3 class=like-name>しおりを挟んだ本</h3>
           <% @user.liked_books.each do |book| %>
-            <%= book.user.nickname %>
-            <%= book.title %>
-            <%= book.author %>
+            <%= link_to "<投稿者>#{book.user.nickname}:  #{book.title}      #{book.author}", book_path(book.id), class: "iine-book" %>
           <% end %>
+      </div>
+      
+      <div class='user-follow'>
+        <h3 class='like-name'>フォロー</h3>
+      </div>
 
-      <h3>フォロー</h3>
-
-      <h3>フォロワー</h3>
+      <div class='follower'>
+        <h3 class='like-name'>フォロワー</h3>
+      </div>
     </div>
 
     <div class='profile'>
