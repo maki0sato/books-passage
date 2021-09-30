@@ -93,3 +93,27 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   text-decoration: none;
   margin-bottom: 15px;
 }
+
+.log-out-text {
+  margin-top: 39px;
+  width: calc(60vw - 350px);
+  background-color: #FFEFD5;
+  border: 10px double wheat;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.log-out-message {
+  margin-top: 5px;
+}
+
+.messages {
+  margin-top: 10px;
+}
+
+.message-text {
+  display: inline-block;
+  border-bottom: 4px solid white;
+  margin-bottom: 5px;
+}

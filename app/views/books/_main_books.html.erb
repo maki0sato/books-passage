@@ -35,8 +35,8 @@
   </li>
   <%#フォローした人の本%>
   <li class='right-books'>
-    <h2 class='what-lists'>フォローした人が読んだ本</h2>
     <% if user_signed_in? %>
+    <h2 class='what-lists'>フォローした人が読んだ本</h2>
     <% @fbooks.each do |fbook| %>
     <div class='book-list'>
       <%= link_to book_path(fbook.id) do %>
@@ -61,6 +61,25 @@
         </div>
       </div>
     <% end %>
+    <% else %>
+      <div class='log-out-text'>
+        <span>こんにちは</span>
+        <span>𝔹𝕆𝕆𝕂𝕊 ℙ𝔸𝕊𝕊𝔸𝔾𝔼ではログインすることでいろいろなことができます</span>
+        <ul class='log-out-message'>
+        
+          <li class='messages'>本の感想を投稿しよう</li>
+          <div class='message-text'>投稿にはコメントで感想を共有することもできます</div>
+          
+          <li class='messages'>フォローしよう</li>
+          <div class='message-text'>フォローすることでその人が投稿するとトップページに表示されます</div>
+
+          <li class='messages'>投稿をしおりに挟もう</li>
+          <div class='message-text'>感想を読んで気になった本をマイページでリストアップできます</div>
+
+          <li class='messages'>検索しよう</li>
+          <div class='message-text'>タイトル、作家名、ジャンルのアプリ内検索ができるようになります</div>
+        </ul>
+      </div>
     <% end %>
   </li>
   
