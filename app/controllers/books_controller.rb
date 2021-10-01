@@ -54,6 +54,10 @@ class BooksController < ApplicationController
     @books_title = Book.select(:title).distinct
   end
 
+  def genre
+    @books = @q.result
+    genre_id = params[:q][:genre_id_eq]
+    @genre = Genre.find_by(id: genre_id)
   private
 
   def book_params
