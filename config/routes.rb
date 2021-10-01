@@ -8,6 +8,9 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
+    collection do
+      get 'genre'
+    end
   end
   resources :users, only: [:show, :edit, :update]
   resources :relationships, only: [:create, :destroy]

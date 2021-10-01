@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
+  before_action :search_genre_book, only: [:index, :genre, :search, :show]
 
   def index
     @books = Book.includes(:user).order('created_at DESC')
@@ -53,10 +54,22 @@ class BooksController < ApplicationController
     @books_title = Book.select(:title).distinct
   end
 
+  def genre
+    @books = @q.result
+    genre_id = params[:q][:genre_id_eq]
+    @genre = Genre.find_by(id: genre_id)
+    @books_author = Book.select(:author).distinct
+    @books_title = Book.select(:title).distinct
+  end
+
   private
 
   def book_params
     params.require(:book).permit(:title, :author, :genre_id, :thoughts, :sentence, :synopsis, :begining, :image).merge(user_id: current_user.id)
+  end
+
+  def search_genre_book
+    @q = Book.ransack(params[:q])
   end
 
 end
