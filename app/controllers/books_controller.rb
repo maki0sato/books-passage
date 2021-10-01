@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
-  before_action :search_genre_book, only: [:index, :category, :hashtag, :search]
+  before_action :search_genre_book, only: [:index, :genre, :search]
 
   def index
     @books = Book.includes(:user).order('created_at DESC')
@@ -58,6 +58,10 @@ class BooksController < ApplicationController
     @books = @q.result
     genre_id = params[:q][:genre_id_eq]
     @genre = Genre.find_by(id: genre_id)
+    @books_author = Book.select(:author).distinct
+    @books_title = Book.select(:title).distinct
+  end
+
   private
 
   def book_params

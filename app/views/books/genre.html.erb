@@ -1,0 +1,69 @@
+<%= render "shared/header" %>
+
+<div class="wrapper">
+  <div class="side-bar">
+    <%= render "shared/side_bar" %>
+  </div>
+  <div class="s-main">
+      <li class='s-books'>
+    <h2 class='what-lists'>検索結果</h2>
+    <% @books.each do |book| %>
+      <div class='book-list'>
+      <%= link_to book_path(book.id) do %>
+        <div class='s-book-content'>
+          <%= image_tag(book.image, class: "book-image") %>
+      <% end %>
+          <div class='book-title'>
+            タイトル:<%= link_to "#{book.title}", "/books/search?keyword=#{book.title}&commit=検索", class: "book-title" %>
+          </div>
+          <div class='book-author'>
+            作者:<%= link_to "#{book.author}", "/books/search?keyword=#{book.author}&commit=検索", class: "book-author" %>
+          </div>
+          <div class='book-genre'>
+            ジャンル:<%= link_to "#{book.genre[:name]}", "#", class: "book-genre" %>
+          </div>
+          <div class='book-begining'>
+            <%= "書き出し:" + book.begining %>
+          </div>
+          <div class='book-user'>
+            投稿者:<%= link_to "#{book.user.nickname}", user_path(book.user_id), class: "book-user" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </li>
+  </div>
+
+  <div class=center-list>
+    <div class=author-list>
+      <h2 class='what-lists'>作者一覧</h2>
+      <% @books_author.each do |author| %>
+        <div class='s-book-author'>
+          <%= link_to "#{author.author}", "/books/search?keyword=#{author.author}&commit=検索", class: "s-book-author" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  
+  <div class=right-list>
+    <div class=title-list>
+      <h2 class='what-lists'>タイトル一覧</h2>
+      <% @books_title.each do |title| %>
+        <div class='s-book-title'>
+          <%= link_to "#{title.title}", "/books/search?keyword=#{title.title}&commit=検索", class: "s_book-title" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+    
+</div>
+
+<%= render "shared/footer" %>
+
+    <%#投稿ボタン%>
+<% if user_signed_in? %>
+<%= link_to new_book_path, class: 'pen-btn' do %>
+  <span class='pen-btn-text'>感想を書く</span>
+  <%= image_tag 'pen.png' , size: '80x80' ,class: "pen-btn-icon" %>
+<% end %>
+<% end %>
