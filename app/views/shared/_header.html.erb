@@ -25,10 +25,10 @@
     <div class='search-bar-contents'>
       <%#検索機能%>
       <div class='search-move'>
-    <%#    <%= form_with(: search_books_path, local: true, method: :get, class: "search-form") do |form| %>
-    <%#      <%= form.text_field :keyword, placeholder: "タイトルと作者名で探す", class: "search-input" %>
-    <%#      <%= form.submit '検索', class: "search-btn" %>
-    <%#    <% end %>
+        <%= form_with(url: search_books_path, local: true, method: :get, class: "search-form") do |form| %>
+          <%= form.text_field :keyword, placeholder: "タイトルと作者名で探す", class: "search-input" %>
+          <%= form.submit '検索', class: "search-btn" %>
+        <% end %>
       </div>
       <%#ジャンルを選択するとその一覧が表示されるように%>
       <%= search_form_for @q, url: genre_books_path do |f| %>
