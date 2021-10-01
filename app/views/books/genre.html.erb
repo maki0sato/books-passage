@@ -20,7 +20,7 @@
             作者:<%= link_to "#{book.author}", "/books/search?keyword=#{book.author}&commit=検索", class: "book-author" %>
           </div>
           <div class='book-genre'>
-            ジャンル:<%= link_to "#{book.genre[:name]}", "#", class: "book-genre" %>
+            ジャンル:<%= link_to "#{book.genre[:name]}", "/books/genre?q%5Bgenre_id_eq%5D=#{book.genre_id}&commit=検索", class: "book-genre" %>
           </div>
           <div class='book-begining'>
             <%= "書き出し:" + book.begining %>

@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
-  before_action :search_genre_book, only: [:index, :genre, :search]
+  before_action :search_genre_book, only: [:index, :genre, :search, :show]
 
   def index
     @books = Book.includes(:user).order('created_at DESC')
