@@ -73,6 +73,9 @@
                 <p class="comment-box">
                   <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}", class: "comment-content" %>：</strong>
                   <span class='comment'><%= comment.comment %></span>
+                  <%= link_to comment_path(comment.id), method: :delete, class: 'dc-btn' do %>
+                  <span class="cd-btn-text">コメントを削除</span>
+                <% end %>
                 </p>
              <% end %>
             </div>

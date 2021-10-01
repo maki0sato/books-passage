@@ -5,6 +5,11 @@ class CommentsController < ApplicationController
     redirect_to "/books/#{comment.book.id}"
   end
 
+  def destroy
+    comment = Comment.find(params[:id]).destroy
+    redirect_to "/books/#{comment.book.id}"
+  end
+
   private
   def comment_params
     params.require(:comment).permit(:comment).merge(user_id: current_user.id, book_id: params[:book_id])
