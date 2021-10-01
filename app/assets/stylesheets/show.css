@@ -76,3 +76,15 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   background-color: teal;
   width: 100px;
 }
+
+.dc-btn{
+  background: #8B0000;
+  text-align: center;
+  border-radius: 5px;
+  border: 3px solid #8B0000;
+  text-decoration: none;
+}
+
+.cd-btn-text {
+  color: white;
+}

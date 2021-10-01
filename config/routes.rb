@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       get 'genre'
     end
   end
+  resources :comments, only: [:destroy]
   resources :users, only: [:show, :edit, :update]
   resources :relationships, only: [:create, :destroy]
 end
