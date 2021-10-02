@@ -97,10 +97,12 @@
 <% if user_signed_in? && current_user.id == @book.user_id %>
   <%= link_to edit_book_path(@book.id), class: 'e-btn' do %>
     <span class='e-btn-text'>編集する</span>
+    <%= image_tag 'pen.png' , size: '40x40' ,class: "edit-pen-btn-icon" %>
   <% end %>
 
   <%= link_to book_path(@book.id), method: :delete, class: 'd-btn' do %>
     <span class='d-btn-text'>削除する</span>
+    <%= image_tag 'gomi' , size: '40x40' ,class: "gomi-icon" %>
   <% end %>
   <% else %>
   <%= link_to new_book_path, class: 'pen-btn' do %>
