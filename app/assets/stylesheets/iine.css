@@ -8,7 +8,8 @@
   background-image: url('iine');
   background-repeat: no-repeat;
   background-size: 40px 40px;
-  background-color: wheat;
+  background-color: teal;
+  border: 2px solid #2F4F4F;
   width: 45px;
   height: 40px;
   border-radius: 5px;
@@ -25,7 +26,8 @@
   background-image: url('iine-shiori');
   background-repeat: no-repeat;
   background-size: 40px 40px;
-  background-color: teal;
+  background-color: #2F4F4F;
+  border: 2px solid teal;
   width: 45px;
   height: 40px;
   border-radius: 5px;
