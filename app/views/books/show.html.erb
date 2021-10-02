@@ -102,6 +102,7 @@
 
   <%= link_to book_path(@book.id), method: :delete, class: 'd-btn' do %>
     <span class='d-btn-text'>削除する</span>
+    <%= image_tag 'gomi' , size: '40x40' ,class: "gomi-icon" %>
   <% end %>
   <% else %>
   <%= link_to new_book_path, class: 'pen-btn' do %>
