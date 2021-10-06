@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+
   get 'books/index'
   root to: "books#index"
   resources :books do
@@ -15,4 +16,7 @@ Rails.application.routes.draw do
   resources :comments, only: [:destroy]
   resources :users, only: [:show, :edit, :update]
   resources :relationships, only: [:create, :destroy]
+  devise_scope :user do
+    post 'users/guest_sign_in', to: 'users/sessions#guest_sign_in'
+  end
 end
