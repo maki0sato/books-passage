@@ -94,5 +94,5 @@ Ruby 2.6.5
 RubyGems 3.0.3  
 Rails 6.0.4.1  
 MySQL 5.6.51  
-Heroku 7.59.0
+Heroku 7.59.0  
 Git 2.30.1
