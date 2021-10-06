@@ -91,9 +91,8 @@ ichiro
 
 
 # データベース設計  
-[![Image from Gyazo](https://i.gyazo.com/2effd4e6ab4d550f69b2e8176d4c622e.png)](https://gyazo.com/2effd4e6ab4d550f69b2e8176d4c622e)
-  
-  
+[![Image from Gyazo](https://i.gyazo.com/2effd4e6ab4d550f69b2e8176d4c622e.png)](https://gyazo.com/2effd4e6ab4d550f69b2e8176d4c622e)  
+
 
 # ローカル環境での動作方法  
     % git clone https://github.com/maki0sato/books-passage  
