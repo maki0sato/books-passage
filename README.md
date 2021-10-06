@@ -52,13 +52,16 @@ ichiro
 ユーザーをフォローすることでトップページにフォローした人の投稿が新しいものから順番に一覧表示されます。  
 [![Image from Gyazo](https://i.gyazo.com/e2d387b3891d9a9a477179e13be1a008.gif)](https://gyazo.com/e2d387b3891d9a9a477179e13be1a008)  
 
+
 **いいね(しおり)機能**  
 感想を読んで気になった本にしおりを挟むことでマイページにて一覧で表示されます。  
 [![Image from Gyazo](https://i.gyazo.com/c4f2a12a552e0541833e00bb9e836574.gif)](https://gyazo.com/c4f2a12a552e0541833e00bb9e836574)  
 
+
 **ネタバレ防止機能**  
 感想の表示、非表示が切り替えることができます。  
 [![Image from Gyazo](https://i.gyazo.com/51c932637d737d4c1f521ba00bd274c0.gif)](https://gyazo.com/51c932637d737d4c1f521ba00bd274c0)  
+
 
 **コメント機能**  
 投稿にコメントをすることができます。  
@@ -69,6 +72,7 @@ ichiro
 ヘッダー内の検索フォームから、タイトルと作家名で検索できます。  
 [![Image from Gyazo](https://i.gyazo.com/a14e0a359a372ffd0a23b17d759ba94c.gif)](https://gyazo.com/a14e0a359a372ffd0a23b17d759ba94c)  
 
+
 **ジャンル別表示機能**  
 ヘッダー内のプルダウンから、ジャンルを選択し、検索することで指定したジャンルの投稿のみ全てを表示します。  
 [![Image from Gyazo](https://i.gyazo.com/854540ee9e0ba718682b9248a00b7516.gif)](https://gyazo.com/854540ee9e0ba718682b9248a00b7516)  
@@ -78,8 +82,10 @@ ichiro
 読みたい本をサイドバーの検索フォームから直接Amazonの購入ページに遷移することができます。  
 [![Image from Gyazo](https://i.gyazo.com/d07d8a02320065f9ef3064e3cf2d4926.gif)](https://gyazo.com/d07d8a02320065f9ef3064e3cf2d4926)  
 
+
 # データベース設計  
 [![Image from Gyazo](https://i.gyazo.com/2effd4e6ab4d550f69b2e8176d4c622e.png)](https://gyazo.com/2effd4e6ab4d550f69b2e8176d4c622e)
+
 
 # ローカル環境での動作方法  
     % git clone https://github.com/maki0sato/books-passage  
