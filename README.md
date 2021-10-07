@@ -50,7 +50,7 @@ ichiro
 # 実装した機能
 **フォロー機能**  
 ユーザーをフォローすることでトップページにフォローした人の投稿が新しいものから順番に一覧表示されます。  
-[![Image from Gyazo](https://i.gyazo.com/e2d387b3891d9a9a477179e13be1a008.gif)](https://gyazo.com/e2d387b3891d9a9a477179e13be1a008)
+[![Image from Gyazo](https://i.gyazo.com/e2d387b3891d9a9a477179e13be1a008.gif)](https://gyazo.com/e2d387b3891d9a9a477179e13be1a008)  
   
 
 
@@ -63,12 +63,6 @@ ichiro
 **ネタバレ防止機能**  
 感想の表示、非表示が切り替えることができます。  
 [![Image from Gyazo](https://i.gyazo.com/51c932637d737d4c1f521ba00bd274c0.gif)](https://gyazo.com/51c932637d737d4c1f521ba00bd274c0)  
-  
-
-
-**コメント機能**  
-投稿にコメントをすることができます。  
-[![Image from Gyazo](https://i.gyazo.com/9738a86736e357b22c65585e4b3dbbe5.gif)](https://gyazo.com/9738a86736e357b22c65585e4b3dbbe5)  
   
 
 
