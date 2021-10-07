@@ -50,37 +50,37 @@ ichiro
 # 実装した機能
 **フォロー機能**  
 ユーザーをフォローすることでトップページにフォローした人の投稿が新しいものから順番に一覧表示されます。  
-[![Image from Gyazo](https://i.gyazo.com/e2d387b3891d9a9a477179e13be1a008.gif)](https://gyazo.com/e2d387b3891d9a9a477179e13be1a008)  
+[![Image from Gyazo](https://i.gyazo.com/52285441e9c4d37c7fba264342724074.gif)](https://gyazo.com/52285441e9c4d37c7fba264342724074)  
   
 
 
 **いいね(しおり)機能**  
 感想を読んで気になった本にしおりを挟むことでマイページにて一覧で表示されます。  
-[![Image from Gyazo](https://i.gyazo.com/c4f2a12a552e0541833e00bb9e836574.gif)](https://gyazo.com/c4f2a12a552e0541833e00bb9e836574)  
+[![Image from Gyazo](https://i.gyazo.com/7cf39ed2411b6c517ddb716b49ae5244.gif)](https://gyazo.com/7cf39ed2411b6c517ddb716b49ae5244)  
   
 
 
 **ネタバレ防止機能**  
 感想の表示、非表示が切り替えることができます。  
-[![Image from Gyazo](https://i.gyazo.com/51c932637d737d4c1f521ba00bd274c0.gif)](https://gyazo.com/51c932637d737d4c1f521ba00bd274c0)  
+[![Image from Gyazo](https://i.gyazo.com/17c3898ead2a25b8225f5fd03ce92a14.gif)](https://gyazo.com/17c3898ead2a25b8225f5fd03ce92a14)  
   
 
 
 **アプリ内検索機能**  
 ヘッダー内の検索フォームから、タイトルと作家名で検索できます。  
-[![Image from Gyazo](https://i.gyazo.com/a14e0a359a372ffd0a23b17d759ba94c.gif)](https://gyazo.com/a14e0a359a372ffd0a23b17d759ba94c)  
+[![Image from Gyazo](https://i.gyazo.com/1af1063e1cd58259402cdb9041bfba98.gif)](https://gyazo.com/1af1063e1cd58259402cdb9041bfba98)  
   
 
 
 **ジャンル別表示機能**  
 ヘッダー内のプルダウンから、ジャンルを選択し、検索することで指定したジャンルの投稿のみ全てを表示します。  
-[![Image from Gyazo](https://i.gyazo.com/854540ee9e0ba718682b9248a00b7516.gif)](https://gyazo.com/854540ee9e0ba718682b9248a00b7516)  
+[![Image from Gyazo](https://i.gyazo.com/a7d6df37126bc653d5011367f14cf62d.gif)](https://gyazo.com/a7d6df37126bc653d5011367f14cf62d)  
   
 
 
 **Amazon検索機能**  
 読みたい本をサイドバーの検索フォームから直接Amazonの購入ページに遷移することができます。  
-[![Image from Gyazo](https://i.gyazo.com/d07d8a02320065f9ef3064e3cf2d4926.gif)](https://gyazo.com/d07d8a02320065f9ef3064e3cf2d4926)  
+[![Image from Gyazo](https://i.gyazo.com/858768b0d4dadcc87beb5c6161e69ffd.gif)](https://gyazo.com/858768b0d4dadcc87beb5c6161e69ffd)  
   
 
 
