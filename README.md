@@ -20,9 +20,9 @@
 # URL
 http://books-passage.herokuapp.com/
 
-Basic認証  
-ichiro  
-5151
+Basic認証
+ID：ichiro
+PW：5151
 
 ヘッダー内の*ゲストログイン*をクリックすれば、ゲスト用アカウントにログインできます。
 
