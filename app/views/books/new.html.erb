@@ -11,10 +11,12 @@
          本の感想や、心に残った一文、あらすじをまとめよう
       </h1>
     </div>
-
+    
     <%= form_with model: @book, local: true do |f| %>
 
-      <%= render 'shared/error_book', model: f.object %>
+      <div class="e-message">
+        <%= render 'shared/error_book', model: f.object %>
+      </div>
 
       <div class="form-group">
         <div class='form-text-wrap'>
