@@ -4,7 +4,8 @@ class Book < ApplicationRecord
   belongs_to        :genre
   has_one_attached  :image
   has_many          :comments
-  has_many          :liked_users, through: :likes, source: :user
+  has_many          :likes, dependent: :destroy
+  has_many          :liked_users, through: :likes, source: :user, dependent: :destroy
 
 
   validates :title,          presence: true
