@@ -86,7 +86,7 @@ PW：5151
 
 
 # ER図  
-[![Image from Gyazo](https://i.gyazo.com/2effd4e6ab4d550f69b2e8176d4c622e.png)](https://gyazo.com/2effd4e6ab4d550f69b2e8176d4c622e)  
+[![Image from Gyazo](https://i.gyazo.com/1d834e4d6cbc12f2d896bd25299a1981.png)](https://gyazo.com/1d834e4d6cbc12f2d896bd25299a1981) 
 
 
 
