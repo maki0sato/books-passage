@@ -85,7 +85,7 @@ PW：5151
   
 
 
-# データベース設計  
+# ER図  
 [![Image from Gyazo](https://i.gyazo.com/2effd4e6ab4d550f69b2e8176d4c622e.png)](https://gyazo.com/2effd4e6ab4d550f69b2e8176d4c622e)  
 
 
@@ -98,10 +98,13 @@ PW：5151
     % rails db:create
     % rails db:migrate
     % rails s
-  
+
+# 開発環境   
 Ruby 2.6.5  
 RubyGems 3.0.3  
 Rails 6.0.4.1  
+AWS  
+  ・S3  
 MySQL 5.6.51  
 Heroku 7.59.0  
-Git 2.30.1
+Git 2.30.1  
